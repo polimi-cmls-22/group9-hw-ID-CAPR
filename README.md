@@ -74,7 +74,7 @@ Now you can send OSC messages which can be read by the other programmes (https:/
 |:--:|
 | <b>The BELAbirinto maze game</b>|
 
-TODO
+The user can play with the **Capr Logo** and move it through the maze with the Joystick. The goal is to perceive the effects changes by moving horizontally and vertically. In the labyrinth the goat can run into other animals. The user can displace them by using the Touch Sensor (for real animals) or the Z Joystick's potentiometer (for the group Capr's faces). But, take care if you touch them: you return to the start middle position!
 
 ### The BELAtore plugin
 <img src="https://user-images.githubusercontent.com/51057211/171940299-39ebd688-16c5-4c65-ba38-d2e86a85b005.png" alt="TheBelatoreGUI" width="700"/>
