@@ -87,6 +87,10 @@
               file="Source/Processors/MasterProcessor.cpp"/>
         <FILE id="OPRCdl" name="MasterProcessor.h" compile="0" resource="0"
               file="Source/Processors/MasterProcessor.h"/>
+        <FILE id="zRKxVl" name="NoiseProcessor.cpp" compile="1" resource="0"
+              file="Source/Processors/NoiseProcessor.cpp"/>
+        <FILE id="ZXFq18" name="NoiseProcessor.h" compile="0" resource="0"
+              file="Source/Processors/NoiseProcessor.h"/>
         <FILE id="B6MHg2" name="PanProcessor.cpp" compile="1" resource="0"
               file="Source/Processors/PanProcessor.cpp"/>
         <FILE id="Sq4d9c" name="PanProcessor.h" compile="0" resource="0" file="Source/Processors/PanProcessor.h"/>
