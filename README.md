@@ -74,7 +74,7 @@ Now you can send OSC messages which can be read by the other programmes (https:/
 |:--:|
 | <b>The BELAbirinto maze game</b>|
 
-The user can play with the **Capr Logo** and move it through the maze with the Joystick. The goal is to perceive the effects changes by moving horizontally and vertically. In the labyrinth the goat can run into other animals. The user can displace them by using the Touch Sensor (for real animals) or the Z Joystick's potentiometer (for the group Capr's faces). But, take care if you touch them: you return to the start middle position!
+The user can play with the **Capr Logo** and move it through the maze with the Joystick. The goal is to perceive the effects changes by moving horizontally and vertically. In the labyrinth the goat can run into other animals. The user can displace them by using the Touch Sensor (for real animals) or the Z Joystick's potentiometer (for scary faces). But, take care if you touch them: you return to the start middle position!
 
 ### The BELAtore plugin
 <img src="https://user-images.githubusercontent.com/51057211/171940299-39ebd688-16c5-4c65-ba38-d2e86a85b005.png" alt="TheBelatoreGUI" width="700"/>
@@ -105,7 +105,7 @@ In particular, here is a list of the controlled parameters:
 
 Choosing one effect in the first module, its OSC-controlled parameter will be affected by the ***x*** position of CAPR in the maze, while the ***y*** position will affect the parameter of the second module's effect.
 
-Moreover, the maze is haunted of animals and scary faces! If CAPR touches them, a white noise component occurs and he will go back to the center of the BELAbirinto maze. in order to remove the noise component, CAPR has to go near to a character an press the touch sensor or the ***z*** button of the joystick, depending if it is respectively a face or an animal. 
+Moreover, the maze is haunted of animals and scary faces! If CAPR touches them, a white noise component occurs and he will go back to the center of the BELAbirinto maze. In order to remove the noise component, CAPR has to go near to a character an press the touch sensor or the ***z*** button of the joystick, depending if it is respectively a face or an animal. 
 
 ## Contact
 
