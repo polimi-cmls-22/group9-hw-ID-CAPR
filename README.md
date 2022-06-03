@@ -1,6 +1,6 @@
 # group9-hw-ID-CAPR
 Group 9 repository for the ID homework of CMLS 2022
-# The Belatore
+# The BELAtore
 ## Computer Music - Languages and Systems AY 2021/2022, Homework 3.
 ### By CAPR Group: Claudio Eutizi, Andres Bertazzi, Pierluigi Tartabini, Riccardo Martinelli
 
@@ -13,24 +13,24 @@ Group 9 repository for the ID homework of CMLS 2022
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#il-belatore">Il Frattalatore</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
+      <li><a href="#the-belatore">The BELAtore</a></li>
+      <li><a href="#built-with">Built With</a></li>
     <li>
       <a href="#folder-structure">Folder Structure</a>
     <li>
       <a href="#usage">Usage</a>
-      <ul>
-      <a href="#il-belabirinto">Fractal Window</a>
-      </ul>
-      <ul>
-      <a href="#belatore-gui">Frattalatore GUI</a>
-      </ul>
     </li>
-    <li><a href="#contacts">Contact</a></li>
+    <li>
+      <a href="#the-bela-board">The BELA board</a>
+    </li>
+    <li>
+      <a href="#the-belabirinto">The BELAbirinto</a>
+    </li>
+    <li>
+      <a href="#the-belatore-plugin">The BELAtore plugin</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -73,10 +73,9 @@ TODO: bela connections with the joystick and the sensor.
 
 TODO
 
-### The BELAtore 
-[TheBelatoreGUI](https://user-images.githubusercontent.com/51057211/171940299-39ebd688-16c5-4c65-ba38-d2e86a85b005.png)
-|:--:|
-| <b>The BELAtore GUI</b>|
+### The BELAtore plugin
+<img src="https://user-images.githubusercontent.com/51057211/171940299-39ebd688-16c5-4c65-ba38-d2e86a85b005.png" alt="TheBelatoreGUI" width="700"/>
+<b>The BELAtore GUI</b>
 
 The GUI has three main modules: **The Master Controls** and two **Effects modules** in series.
 The effects can be chosen selecting them on the combo box and bypassed toggling button on the right of each module.
