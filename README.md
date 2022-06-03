@@ -66,6 +66,7 @@ The application can be used in two modalities: as a classic VST application or c
 ### The BELA Board
 Connect the sensors with Bela throught a breadboard.
 In particular the X and Y potentiometers of the Joystick has to be connected to analog inputs (https://learn.bela.io/tutorials/pure-data/connecting/analog-input/) while the Z potentiometer and the Touch Sensor has to go into the digital input (https://learn.bela.io/tutorials/pure-data/connecting/digital-input/#:~:text=The%20%5Br%20bela_digitalIn18%5D%20receives%20the%20value%20read%20of,3.3V%20which%20is%20represented%20as%201%20on%20Bela.).
+
 Now you can send OSC messages which can be read by the other programmes (https://learn.bela.io/tutorials/pure-data/communication/open-sound-control/).
 
 ### The BELAbirinto
