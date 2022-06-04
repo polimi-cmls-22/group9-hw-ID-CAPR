@@ -10,6 +10,7 @@
 #include "Groups/DelayGroup.h"
 #include "Groups/PanGroup.h"
 
+//Instances of the parameter groups
 struct ParameterReferences : Parameters
 {
     explicit ParameterReferences(juce::AudioProcessorValueTreeState::ParameterLayout& layout)

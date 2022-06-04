@@ -80,6 +80,7 @@ void NoiseProcessor::reset()
     noiseGain.reset();
 }
 
+//OSC messages: this will increase or remove the noise effect in the sound, depending on which message arrives
 void NoiseProcessor::oscMessageReceived(const juce::OSCMessage& message)
 {
     if (!message.isEmpty() && message.size() == 1)

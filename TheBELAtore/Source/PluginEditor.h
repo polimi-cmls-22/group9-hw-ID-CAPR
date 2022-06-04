@@ -139,9 +139,11 @@ private:
 
     TheBelatoreAudioProcessor& audioProcessor;
 
+    //boolean arrays that keep track of the listening components
     std::array<bool, 8> isListeningComponent1{ false };
     std::array<bool, 8> isListeningComponent2{ false };
 
+    //two components for each processor, this is needed because there are two effect slots
     MainComponent       mainComponent{ *this, audioProcessor.getParameterValues().main };
     DistortionComponent distortionComponent1{ *this, audioProcessor.getParameterValues().distortion };
     DistortionComponent distortionComponent2{ *this, audioProcessor.getParameterValues().distortion };

@@ -14,7 +14,9 @@
 #include "CustomLookAndFeel.h"
 //==============================================================================
 /*
+* Template functions and classes that define some attached components that are contained in the components of the GUI
 */
+
 using namespace juce;
 template <typename... Components>
 void addAllAndMakeVisible(Component& target, Components&... children)

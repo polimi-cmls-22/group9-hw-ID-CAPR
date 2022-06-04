@@ -121,6 +121,10 @@ void TheBelatoreAudioProcessorEditor::resized()
         panComponent2);
 }
 
+//Whenever the chosen effects change, this functions sets visible the right effects and makes them OSC listeners to the proper messages
+//If another component listens to the same message, it would be able to modify the same parameter in the apvts. 
+//in order to avoid this, if a component is a listener, the correspondent other component instance on the other effect slot will be removed as listener
+
 void TheBelatoreAudioProcessorEditor::updateVisibility()
 {
     const auto indexEffect1 = comboSlot1.getSelectedId();

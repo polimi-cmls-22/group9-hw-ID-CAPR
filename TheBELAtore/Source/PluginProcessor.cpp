@@ -286,7 +286,7 @@ void TheBelatoreAudioProcessor::updateGraph()
             hasChanged = true;
         }
     }
-
+    //if the graph has changed, the graph is redefined from scratch
     if (hasChanged)
     {
         for (auto connection : mainProcessor->getConnections())    
@@ -351,6 +351,7 @@ void TheBelatoreAudioProcessor::updateGraph()
     slot2Node = slots.getUnchecked(1);
 }
 
+//function called whenever a parameter changes
 void TheBelatoreAudioProcessor::update()
 {
     dynamic_cast<InputProcessor*>(inputProcessorNode->getProcessor())->updateParameters(parameters.main.inputGain.get());
@@ -359,6 +360,7 @@ void TheBelatoreAudioProcessor::update()
     juce::ReferenceCountedArray<Node> slots;
     slots.add(slot1Node);
     slots.add(slot2Node);
+
 
     for (auto slot : slots)
     {
@@ -520,6 +522,7 @@ void TheBelatoreAudioProcessor::update()
     requiresUpdate.store(false);
 }
 
+//standard connections when there are no effects in the slot
 void TheBelatoreAudioProcessor::connectAudioNodes()
 {
     for (int channel = 0; channel < getNumOutputChannels(); ++channel)
