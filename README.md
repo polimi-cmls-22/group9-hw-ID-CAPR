@@ -54,20 +54,28 @@ Cloning the repository there will be available two main folders, **TheBELAtore**
 The **TheBELAtore** folder contains a JUCE project whose structure is the same as a standard JUCE plugin application. Opening the ***.jucer*** file with the cross-platform **Projucer**, the JUCE project can then be built with every other IDE such as Visual Studio and XCode.
 The **BELAbirinto** folder contains the maze game. This section has been implemented using Processing. In the folder is present the ***Labirinto.pde*** file, that can be opened and run with the Processing IDE.
 
-TODO: how to import the BELA script and to make it work
+### The BELA Board
+Connect the sensors with Bela throught a breadboard.
+In particular the X and Y potentiometers of the Joystick has to be connected to analog inputs (https://learn.bela.io/tutorials/pure-data/connecting/analog-input/) while the Z potentiometer and the Touch Sensor has to go into the digital input (https://learn.bela.io/tutorials/pure-data/connecting/digital-input/#:~:text=The%20%5Br%20bela_digitalIn18%5D%20receives%20the%20value%20read%20of,3.3V%20which%20is%20represented%20as%201%20on%20Bela.). 
 
 ## How to run the BELAtore
 
 The application can be used in two modalities: as a classic VST application or connecting it with the BELAbirinto maze. This is possible only with a BELA board connected to the computer and a Joystick and touch sensor. In particular, the devices that have been used for our development are ***DFROBOT Touch Sensor V2*** and ***DFROBOT Joystick V2*** (available here: https://www.dfrobot.com/connected) to a solderless breadboard. 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Import the BELA script and to make it work
+
+Once you have configured the hardware components,the first thing you need to run the Belatore project is to configure the platform in your pc. The passages you have to do are:
+- Connect **Bela Board** on your computer thanks to the USB cable; 
+- Unzip the OSCBelaSender folder and open the "render.cpp" file in the BELA IDE;
+- To bring up the IDE you have to connect  to http://bela.local (or http://192.168.7.2 for Linux or http://192.168.6.2 for Windows);
+- Run the "render.cpp" file;
+
 ## Usage
 
-### The BELA Board
-Connect the sensors with Bela throught a breadboard.
-In particular the X and Y potentiometers of the Joystick has to be connected to analog inputs (https://learn.bela.io/tutorials/pure-data/connecting/analog-input/) while the Z potentiometer and the Touch Sensor has to go into the digital input (https://learn.bela.io/tutorials/pure-data/connecting/digital-input/#:~:text=The%20%5Br%20bela_digitalIn18%5D%20receives%20the%20value%20read%20of,3.3V%20which%20is%20represented%20as%201%20on%20Bela.).
+After these steps you are able to join the maze game using the ***DFROBOT sensors***. Now you can run the "Labirinto.pde" file in the homonym folder and it will appear the maze GUI. 
+P.S. : to let communicate Bela Board and Processing we implemented the OSC Messages with setting a remote port and a remote IP Adress.If it doesn't work for you try ti change these paramteres.
 
-Now you can send OSC messages which can be read by the other programmes (https://learn.bela.io/tutorials/pure-data/communication/open-sound-control/).
 
 ### The BELAbirinto
 ![TheBELAbirinto](https://user-images.githubusercontent.com/51057211/171942269-32ad74a8-9f45-4892-8b09-0882195f8f1e.png)
