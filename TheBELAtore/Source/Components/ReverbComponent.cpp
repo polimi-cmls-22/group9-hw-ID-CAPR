@@ -23,7 +23,7 @@ ReverbComponent::ReverbComponent(AudioProcessorEditor& editor,
       mixSlider         (editor, state.mix)
 {
     addAllAndMakeVisible(*this, roomSizeSlider, widthSlider, dampingSlider, freezeSlider,
-        lowpassSlider, highpassSlider, freezeSlider);
+        lowpassSlider, highpassSlider, freezeSlider, mixSlider);
 }
 
 ReverbComponent::~ReverbComponent()
@@ -33,7 +33,7 @@ ReverbComponent::~ReverbComponent()
 
 void ReverbComponent::resized()
 {
-    performLayout(getLocalBounds(), roomSizeSlider, widthSlider, dampingSlider, freezeSlider, lowpassSlider, highpassSlider, freezeSlider);
+    performLayout(getLocalBounds(), roomSizeSlider, widthSlider, dampingSlider, freezeSlider, lowpassSlider, highpassSlider, freezeSlider, mixSlider);
 
 }
 
